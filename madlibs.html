@@ -1,0 +1,40 @@
+<DOCTYPE>
+<html>
+    
+<head>
+    background color: red;
+</head>    
+    <script>
+        function mad() {
+            var noun = document.getElementById("noun").value;
+            var noun2 = document.getElementById("noun2").value;
+            
+            
+            var sentence = noun + "  jumped over the " + noun2; 
+             document.getElementById("madlib") .innerHTML = sentence; 
+        }
+        function random() {
+            var dictionary = ["cow", "dog", "pillow", "car", "phone", "tree" ]
+            document.getElementById("noun").value = dictionary [0];
+            
+            console. log ( getRandomInt(0,5) )
+        }
+      function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max-min)) +min;
+      }
+    
+    </script>
+    
+<body>
+    <label> Noun </label>
+    <input id ="noun"/>
+    <button onClick = "random()"> Go Random!</button>
+    <br/>     
+    <br/>
+    <button onClick = "mad()"> Go Mad!</button>
+    <p id = "madlib"> Change my text </p>
+</body>
+
+</html>
+
+</DOCTYPE>

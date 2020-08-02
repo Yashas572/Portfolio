@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+<script>
+    function mad(){
+        var personname = document.getElementById ("personname").value;
+        var noun = document.getElementById ("noun").value;
+        var adjective = document.getElementById("adjective").value;
+        var noun2 = document.getElementById ("noun2").value;
+        var verb = document.getElementById ("verb"). value;
+        var sentence = personname + " has a " + adjective + " annoying " + noun + " that likes to " + verb + " on a " + noun2 + " everyday "
+            document.getElementById ("madlib"). innerHTML = sentence;
+    }
+   
+</script>
+</head>
+   
+<body>
+<label> Name </label>
+<input id = "personname"/>
+   
+<br/>
+
+<label> Noun </label>
+<input id = "noun"/>
+   
+<br/>
+
+<label> Noun </label>
+<input id = "noun2"/>
+   
+<br/>
+   
+<label> Adjective </label>
+<input id = "adjective"/>
+   
+<br/>
+   
+<label> Verb </label>
+<input id = "verb"/>
+   
+<br/>
+
+<button onClick = "mad()">  Go Mad </button>
+<p id = "madlib"></p>
+   
+   
+</body>
+
+</html>
